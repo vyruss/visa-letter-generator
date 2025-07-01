@@ -3,23 +3,20 @@
 # Fill in the details below and save this file as <FullName>.yaml
 # For example: JohnDoe.yaml
 
-# --- Required Fields (in passport order) ---
+# --- Required Fields ---
 full_name_passport: "John Takeshi Doe"
 nationality: "Japanese"
 date_of_birth: "1985-03-15"
 passport_number: "TK1234567"
 gender: "male"
 address: |
-  1-2-3 Shibuya
-  Tokyo 150-0002
-  Japan
+  1-2-3 Shibuya, Tokyo 150-0002, Japan
 
 # Embassy details
 embassy_name: "Embassy of Latvia"
 embassy_address: |
   3-4-1 Akasaka, Minato-ku
-  Tokyo 107-0052
-  Japan
+  Tokyo 107-0052, Japan
 
 # Travel details
 entry_date: "2025-10-01"
