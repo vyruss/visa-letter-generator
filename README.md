@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ### 3. Edit Conference Configuration
 Edit `pgeu.yaml` with your conference and signer information:
 - Conference details (name, dates, venue, etc.)
-- Signer details (name, title, contact information)
+- Signer details (name, title, contact information)  
 All dates must be in YYYY-MM-DD format (e.g., 2025-10-15).
 
 ### 4. Collect Information from Applicant
@@ -45,7 +45,6 @@ Request the following information from the visa applicant:
 
 ### 5. Create Individual Request File
 Create a YAML file (e.g., `JohnDoe.yaml`) with the applicant's information:
-All dates must be in YYYY-MM-DD format (e.g., 2025-10-15).
 
 ```yaml
 full_name_passport: John Takeshi Doe
@@ -65,6 +64,7 @@ contact: +81-90-1234-5678
 entry_date: 2025-10-01
 exit_date: 2025-10-25
 ```
+All dates must be in YYYY-MM-DD format (e.g., 2025-10-15).
 
 ### 6. Generate Letter
 ```bash
