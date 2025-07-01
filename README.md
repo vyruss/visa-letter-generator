@@ -20,8 +20,31 @@ Edit `pgeu.yaml` with your conference and signer information:
 - Signer details (name, title, contact information)
 All dates must be in YYYY-MM-DD format (e.g., "2025-10-15").
 
-### 4. Create Individual Request File
-Create a YAML file (e.g., `JohnDoe.yaml`) with the applicant's personal details and embassy details:
+### 4. Collect Information from Applicant
+Request the following information from the visa applicant:
+
+**Personal Information:**
+- Full name exactly as shown on passport
+- Date of birth
+- Nationality
+- Passport number
+- Passport gender (male/female)
+- Full address
+
+**Travel Information:**
+- Embassy name where they will apply for the visa
+- Embassy address (including city and country)
+- Hotel/accommodation name and address where they will stay
+- Contact phone number (including country code)
+- Entry date to the country
+- Exit date from the country
+
+**Conference Status:**
+- Whether they are a speaker at the conference
+- Whether PostgreSQL Europe is covering their accommodation
+
+### 5. Create Individual Request File
+Create a YAML file (e.g., `JohnDoe.yaml`) with the applicant's information:
 All dates must be in YYYY-MM-DD format (e.g., "2025-10-15").
 
 ```yaml
@@ -43,7 +66,7 @@ entry_date: 2025-10-01
 exit_date: 2025-10-25
 ```
 
-### 5. Generate Letter
+### 6. Generate Letter
 ```bash
 ./generate_visa_letter.py JohnDoe.yaml
 ```

@@ -20,7 +20,7 @@ entry_date: 2025-10-01
 exit_date: 2025-10-25
 
 # Set to true if the attendee is a speaker (defaults to false)
-# is_speaker: false
+# is_speaker: true
 
 # Set to true if PostgreSQL Europe is covering accommodations (defaults to false)
-# pgeu_accomodations: false
+# pgeu_accomodations: true

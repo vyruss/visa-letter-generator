@@ -9,7 +9,7 @@ conferences, {{ conference.name }}, on the {{ conference.dates }} in the
 Please accept this letter in support of the short stay visa application
 of <b>{% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}</b>
 to travel to Riga, Latvia in order to {% if is_speaker %}give a presentation
-at{% else %}attend{% endif %} the PGConf.EU 2025 conference.
+at the {% else %}attend the {% endif %}{{ conference.name }} conference.
 {% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}
 will be in Latvia from {{ entry_date }} to {{ exit_date }}.
 
