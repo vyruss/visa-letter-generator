@@ -17,7 +17,8 @@ pip install -r requirements.txt
 ### 3. Edit Conference Configuration
 Edit `pgeu.yaml` with your conference and signer information:
 - Conference details (name, dates, venue, etc.)
-- Signer details (name, title, contact information)  
+- Signer details (name, title, contact information)
+
 All dates must be in YYYY-MM-DD format (e.g., 2025-10-15).
 
 ### 4. Collect Information from Applicant
