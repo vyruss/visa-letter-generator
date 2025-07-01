@@ -1,0 +1,21 @@
+# PostgreSQL Europe Configuration
+# This file contains conference details and letter signer information
+
+# Conference details (update for each conference)
+conference:
+  name: "PGConf.EU 2025"
+  dates: "October 15-18, 2025"
+  venue: "Radisson Blu Latvija Conference & Spa Hotel"
+  city: "Riga"
+  country: "Latvia"
+  contact_email: "contact@pgconf.eu"
+
+# Letter signer details
+signer:
+  name: "Samed Yildirim"
+  title: "Member, PostgreSQL Europe"
+  contact_info: |
+    Samed Yildirim
+    Street Address Here, Latvia
+    Tel: +371 XXXXXXX
+    Email: contact@pgconf.eu
