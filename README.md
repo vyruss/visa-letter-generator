@@ -25,22 +25,22 @@ Create a YAML file (e.g., `JohnDoe.yaml`) with the applicant's personal details 
 All dates must be in YYYY-MM-DD format (e.g., "2025-10-15").
 
 ```yaml
-full_name_passport: "John Takeshi Doe"
-date_of_birth: "1985-03-15"
-nationality: "Japanese"
-passport_number: "TK1234567"
-address: "1-2-3 Shibuya Tokyo 150-0002 Japan"
-gender: "Male"
+full_name_passport: John Takeshi Doe
+nationality: Japanese
+date_of_birth: 1985-03-15
+passport_number: TK1234567
+gender: male
+address: 1-2-3 Shibuya Tokyo 150-0002 Japan
 
-embassy_name: "Embassy of Latvia"
+embassy_name: Embassy of Latvia
 embassy_address: |
   3-4-1 Akasaka, Minato-ku
   Tokyo 107-0052, Japan
 
-stay_at: "Radisson Blu Latvia Conference & Spa Hotel"
-contact: "+81-90-1234-5678"
-entry_date: "2025-10-01"
-exit_date: "2025-10-25"
+stay_at: Radisson Blu Latvija Conference & Spa Hotel, Elizabetes iela 55, Riga LV-1010
+contact: +81-90-1234-5678
+entry_date: 2025-10-01
+exit_date: 2025-10-25
 ```
 
 ### 5. Generate Letter

@@ -155,10 +155,14 @@ def create_visa_letter_pdf(data, output_file, signature_file=None):
 
     
     try:
-        data['entry_date'] = datetime.strptime(data['entry_date'], '%Y-%m-%d').strftime('%d/%m/%Y')
-        data['exit_date'] = datetime.strptime(data['exit_date'], '%Y-%m-%d').strftime('%d/%m/%Y')
-        data['date_of_birth'] = datetime.strptime(data['date_of_birth'], '%Y-%m-%d').strftime('%d/%m/%Y')
-    except ValueError as e:
+        # Handle dates that might be strings or date objects
+        for date_field in ['entry_date', 'exit_date', 'date_of_birth']:
+            if isinstance(data[date_field], str):
+                data[date_field] = datetime.strptime(data[date_field], '%Y-%m-%d').strftime('%d/%m/%Y')
+            else:
+                # Already a date object, just format it
+                data[date_field] = data[date_field].strftime('%d/%m/%Y')
+    except (ValueError, AttributeError) as e:
         print(f"Error: Invalid date format. Please use YYYY-MM-DD for date fields. Details: {e}")
         sys.exit(1)
 
