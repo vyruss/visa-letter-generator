@@ -8,10 +8,10 @@ conferences, {{ conference.name }}, on the {{ conference.dates }} in the
 
 Please accept this letter in support of the short stay visa application
 of <b>{% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}</b>
-to travel to Riga, Latvia in order to {% if is_speaker %}give a presentation
+to travel to {{conference.city}}, {{conference.country}} in order to {% if is_speaker %}give a presentation
 at the {% else %}attend the {% endif %}{{ conference.name }} conference.
 {% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}
-will be in Latvia from {{ entry_date }} to {{ exit_date }}.
+will be in {{conference.country}} from {{ entry_date }} to {{ exit_date }}.
 
 {% if pgeu_accomodations %}
 PostgreSQL Europe will be responsible for all accommodation and travel
@@ -24,7 +24,7 @@ accommodation and travel expenses.
 {% if is_speaker %}{% if gender == 'male' %}His{% else %}Her{% endif %}
 registration fees for the events are waived.
 {% else %}{% if gender == 'male' %}His{% else %}Her{% endif %} registration
-fees for the events are paid in full.{% endif %} While in Latvia,
+fees for the events are paid in full.{% endif %} While in {{conference.country}},
 {% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}
 will be staying at {{ stay_at }}.
 {% if gender == 'male' %}Mr{% else %}Ms{% endif %} {{ full_name_passport }}
@@ -37,9 +37,8 @@ Nationality: {{ nationality }}<br/>
 Passport no: {{ passport_number }}<br/>
 Address: {{ address }}
 
-PGConf.EU 2025 is one of the main conferences held every year by
-PostgreSQL Europe, and is held every year in a European City. In 2025,
-Riga was selected. PostgreSQL is a global project and we welcome
+{{ conference.name }} is one of the main conferences held every year by
+PostgreSQL Europe. PostgreSQL is a global project and we welcome
 developers and users from around the world to share experiences and
 plans at our events.
 
