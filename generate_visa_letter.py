@@ -128,10 +128,10 @@ def create_visa_letter_pdf(data, output_file, signature_file=None):
     story.append(header_table)
     story.append(Spacer(1, 20))
 
-    
+    data['embassy_address']=data['embassy_address'].replace('\n', '<br/>')
     embassy_info = f"""
     {data['embassy_name']}<br/>
-    {data['embassy_address'].replace('\n', '<br/>')}
+    {data['embassy_address']}
     """
     today = datetime.now().strftime("%B %d, %Y")
     
